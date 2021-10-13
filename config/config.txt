@@ -4,3 +4,47 @@ git config --global color.branch auto
 
 git config --global core.editor notepad++
 git config --global merge.tool vimdiff
+
+git init
+git add . 
+git commit -m ""
+git push
+
+git remote add https://github.com/OpenClassrooms-Student-Center/ProjetOpenSource.git
+
+#RECUPERER UN PROJET
+git pull main
+
+#CREER UNE BRANCHE
+git branch NAME
+
+#CHANGER DE BRANCHE
+git checkout NAME
+
+git branch -d permet de supprimer une branche.
+
+git status permet de voir l’état des fichiers.
+
+git stash enregistre les modifications non indexées pour une utilisation ultérieure. 
+
+git log affiche l'historique des commits réalisés sur la branche courante.
+
+git reset --hard HEAD^ permet de réinitialiser l'index et le répertoire de travail à l'état du dernier commit.
+
+git commit --amend permet de sélectionner le dernier commit pour y effectuer des modifications.
+
+git revert HEAD^ permet d'annuler un commit en créant un nouveau commit.
+
+git reset permet de revenir à l'état précédent sans créer un nouveau commit.
+
+git revert permet de revenir à l'état précédent en créant un nouveau commit.
+
+git log affiche l'historique des commits réalisés sur la branche courante.
+
+git reflog est identique à git log. Cette commande affiche également toutes les actions réalisées en local.
+
+git checkout un_identifiant_SHA-1 permet de revenir à une action donnée.
+
+git blame permet de savoir qui a réalisé telle modification dans un fichier, à quelle date, ligne par ligne.
+
+git cherry-pick un_identifiant_SHA-1 un_autre_identifiant_SHA-1 permet de sélectionner un commit et de l'appliquer sur la branche actuelle. 
